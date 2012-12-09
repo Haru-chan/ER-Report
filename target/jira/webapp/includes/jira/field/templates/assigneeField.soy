@@ -1,0 +1,33 @@
+{namespace JIRA.Templates.Fields.Pickers.User}
+
+
+/**
+ * Renders a single User option element.
+ *
+ * @param field (Map) a Map representation of the AssigneeSystemField
+ * @param disabled (boolean) if true, only a text field should be shown
+ * @param isLoggedInUserAssignable (boolean) true if the currently logged-in user can be the assignee for this field
+ * @param? assigneeOptions (AssigneeOptions map) assignee options and option groups
+ * @param? projectKeys (String) comma-separated keys of the projects the assignee search will be limited to
+ * @param? issueKey (String) issue key of the issue that's being edited. May be null.
+  */
+{template .assignee}
+    {call JIRA.Templates.Fields.Pickers.User.single data="all"}
+        {param options: $assigneeOptions.options /}
+        {param showDropdownButton: true /}
+        {param userType: 'assignee' /}
+        {param type: 'assignee-picker' /}
+        {param containerClass: 'long-field' /}
+    {/call}
+    {if $isLoggedInUserAssignable}
+        <a href="#{$field.id}" id="assign-to-me-trigger">{getText('issue.operations.assign.tome.short')}</a>
+    {/if}
+    {if not $disabled}
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="projectKeys" value="{$projectKeys}"/>
+            {if $issueKey}
+                <input type="hidden" title="assigneeEditIssueKey" value="{$issueKey}"/>
+            {/if}
+        </fieldset>
+    {/if}
+{/template}

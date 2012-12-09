@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+  </plugin-info>
+  <resource type="i18n" name="i18n" location="com.capgemini.hyc.ER-Report"/>
+  <report name="Er Feature" i18n-name-key="er-feature.name" key="er-feature" class="com.capgemini.hyc.jira.reports.ErFeature">
+    <description key="er-feature.description">The Er Feature Plugin</description>
+    <resource name="view" type="velocity" location="/templates/reports/er-feature/view.vm"/>
+    <resource name="i18n" type="i18n" location="ErFeature"/>
+    <label key="er-feature.label"></label>
+    <!-- the properties of this report which the user must select before running it -->
+    <!-- Uncomment and edit properties...    -->
+    <properties>
+        <property>
+            <key>erID</key>
+            <name>erID.name</name>
+            <description>erID.description</description>
+            <type>string</type>
+        </property>
+    </properties>
+
+  </report>
+</atlassian-plugin>

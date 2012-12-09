@@ -1,0 +1,5 @@
+#if ($reporter && $reporter.displayName)
+    $textutils.htmlEncode($reporter.displayName)
+#else
+    $i18n.getText('common.words.anonymous')
+#end

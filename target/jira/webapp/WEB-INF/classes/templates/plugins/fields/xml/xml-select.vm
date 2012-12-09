@@ -1,0 +1,3 @@
+#if ($value)
+    <customfieldvalue key="$value.optionId"><![CDATA[$xmlutils.escapeForCdata($value.toString())]]></customfieldvalue>
+#end

@@ -1,0 +1,1 @@
+#if($remoteUser)${remoteUser.displayName}#else$i18n.getText("common.words.anonymous")#end $i18n.getText("jira.mentions.mentioned.you") (JIRA)

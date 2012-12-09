@@ -1,0 +1,14 @@
+#if ($valueObject && $valueObject.get(null))
+    #searcherHeaderNoField ($customField.id "$customField.name (${i18n.getText('common.words.parent')})")
+        $valueObject.get(null)
+    #searcherFooter ($customField)
+#end
+
+
+#if ($valueObject && $valueObject.get('1'))
+    #searcherHeaderNoField ($customField.id "$customField.name (${i18n.getText('common.words.child')})")
+        $valueObject.get('1')
+    #searcherFooter ($customField)
+#end
+
+

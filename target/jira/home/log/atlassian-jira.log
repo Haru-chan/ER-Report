@@ -1,0 +1,1308 @@
+2012-12-09 13:34:50,616 main INFO      [jira.config.database.SystemTenantDatabaseConfigurationLoader] Reading database configuration from F:\Projekt\ER-Report\target\jira\home\dbconfig.xml
+2012-12-09 13:34:51,407 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+****************
+JIRA starting...
+****************
+
+2012-12-09 13:34:51,457 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Environment _____________________________
+
+     JIRA Build                                    : 5.0#713-sha1:aec58e27a0d402341b1f1be2fc8c0204a0b070f6
+     Build Date                                    : Wed Feb 15 00:00:00 CET 2012
+     JIRA Installation Type                        : unknown
+     Application Server                            : Apache Tomcat/6.0.20 - Servlet API 2.5
+     Java Version                                  : 1.6.0_27 - Sun Microsystems Inc.
+     Current Working Directory                     : F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home
+     Maximum Allowable Memory                      : 494MB
+     Total Memory                                  : 123MB
+     Free Memory                                   : 96MB
+     Used Memory                                   : 27MB
+     Memory Pool: Code Cache                       : Code Cache: init = 163840(160K) used = 1632832(1594K) committed = 1638400(1600K) max = 33554432(32768K)
+     Memory Pool: Eden Space                       : Eden Space: init = 35782656(34944K) used = 25612376(25012K) committed = 35782656(34944K) max = 143130624(139776K)
+     Memory Pool: Survivor Space                   : Survivor Space: init = 4456448(4352K) used = 1025080(1001K) committed = 4456448(4352K) max = 17891328(17472K)
+     Memory Pool: Tenured Gen                      : Tenured Gen: init = 89522176(87424K) used = 2003352(1956K) committed = 89522176(87424K) max = 357957632(349568K)
+     Memory Pool: Perm Gen                         : Perm Gen: init = 50331648(49152K) used = 7069312(6903K) committed = 50331648(49152K) max = 268435456(262144K)
+     Memory Pool: Perm Gen [shared-ro]             : Perm Gen [shared-ro]: init = 10485760(10240K) used = 5764424(5629K) committed = 10485760(10240K) max = 10485760(10240K)
+     Memory Pool: Perm Gen [shared-rw]             : Perm Gen [shared-rw]: init = 12582912(12288K) used = 6967616(6804K) committed = 12582912(12288K) max = 12582912(12288K)
+     JVM Input Arguments                           : -Xmx512m -XX:MaxPermSize=256m -Xms128m -XX:PermSize=48m -Datlassian.dev.mode=true -Dplugin.resource.directories=F:\Projekt\ER-Report\src\main\resources -Dcargo.datasource.datasource=cargo.datasource.url=jdbc:hsqldb:F:/Projekt/ER-Report/target/jira/home/database|cargo.datasource.driver=org.hsqldb.jdbcDriver|cargo.datasource.username=sa|cargo.datasource.password=|cargo.datasource.type=javax.sql.DataSource|cargo.datasource.jndi=jdbc/JiraDS -Djira.home=F:/Projekt/ER-Report/target/jira/home -Dplugin.root.directories=F:\Projekt\ER-Report -Djava.awt.headless=true -Dcatalina.servlet.uriencoding=UTF-8 -Dbaseurl=http://Maja-PC:2990/jira -Datlassian.sdk.version=4.0 -Dcatalina.home=F:\Projekt\ER-Report\target\container\tomcat6x\apache-tomcat-6.0.20 -Dcatalina.base=F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home -Djava.io.tmpdir=F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home/temp -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home/conf/logging.properties
+
+___ Java System Properties ________________
+
+     atlassian.dev.mode                            : true
+     atlassian.sdk.version                         : 4.0
+     awt.toolkit                                   : sun.awt.windows.WToolkit
+     baseurl                                       : http://Maja-PC:2990/jira
+     cargo.datasource.datasource                   : cargo.datasource.url=jdbc:hsqldb:F:/Projekt/ER-Report/target/jira/home/database|cargo.datasource.driver=org.hsqldb.jdbcDriver|cargo.datasource.username=sa|cargo.datasource.password=|cargo.datasource.type=javax.sql.DataSource|cargo.datasource.jndi=jdbc/JiraDS
+     catalina.base                                 : F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home
+     catalina.home                                 : F:\Projekt\ER-Report\target\container\tomcat6x\apache-tomcat-6.0.20
+     catalina.servlet.uriencoding                  : UTF-8
+     catalina.useNaming                            : true
+     common.loader                                 : ${catalina.base}/common/classes,
+                                                     ${catalina.base}/common/lib/*.jar,
+                                                     ${catalina.home}/lib,
+                                                     ${catalina.home}/lib/*.jar
+     file.encoding                                 : Cp1252
+     file.encoding.pkg                             : sun.io
+     java.awt.graphicsenv                          : sun.awt.Win32GraphicsEnvironment
+     java.awt.headless                             : true
+     java.awt.printerjob                           : sun.awt.windows.WPrinterJob
+     java.class.version                            : 50.0
+     java.home                                     : C:\Program Files (x86)\Java\jdk1.6.0_27\jre
+     java.io.tmpdir                                : F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home/temp
+     java.naming.factory.initial                   : org.apache.naming.java.javaURLContextFactory
+     java.naming.factory.url.pkgs                  : org.apache.naming
+     java.runtime.name                             : Java(TM) SE Runtime Environment
+     java.runtime.version                          : 1.6.0_27-b07
+     java.specification.name                       : Java Platform API Specification
+     java.specification.vendor                     : Sun Microsystems Inc.
+     java.specification.version                    : 1.6
+     java.util.logging.config.file                 : F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home/conf/logging.properties
+     java.util.logging.manager                     : org.apache.juli.ClassLoaderLogManager
+     java.vendor                                   : Sun Microsystems Inc.
+     java.vendor.url                               : http://java.sun.com/
+     java.vendor.url.bug                           : http://java.sun.com/cgi-bin/bugreport.cgi
+     java.version                                  : 1.6.0_27
+     java.vm.info                                  : mixed mode, sharing
+     java.vm.name                                  : Java HotSpot(TM) Client VM
+     java.vm.specification.name                    : Java Virtual Machine Specification
+     java.vm.specification.vendor                  : Sun Microsystems Inc.
+     java.vm.specification.version                 : 1.0
+     java.vm.vendor                                : Sun Microsystems Inc.
+     java.vm.version                               : 20.2-b06
+     jira.home                                     : F:/Projekt/ER-Report/target/jira/home
+     os.arch                                       : x86
+     os.name                                       : Windows 7
+     os.version                                    : 6.1
+     package.access                                : sun.,
+                                                     org.apache.catalina.,
+                                                     org.apache.coyote.,
+                                                     org.apache.tomcat.,
+                                                     org.apache.jasper.,
+                                                     sun.beans.
+     package.definition                            : sun.,
+                                                     java.,
+                                                     org.apache.catalina.,
+                                                     org.apache.coyote.,
+                                                     org.apache.tomcat.,
+                                                     org.apache.jasper.
+     plugin.resource.directories                   : F:\Projekt\ER-Report\src\main\resources
+     plugin.root.directories                       : F:\Projekt\ER-Report
+     server.loader                                 : 
+     shared.loader                                 : ${catalina.base}/shared/classes,
+                                                     ${catalina.base}/shared/lib/*.jar
+     sun.arch.data.model                           : 32
+     sun.boot.library.path                         : C:\Program Files (x86)\Java\jdk1.6.0_27\jre\bin
+     sun.cpu.endian                                : little
+     sun.cpu.isalist                               : 
+     sun.desktop                                   : windows
+     sun.io.unicode.encoding                       : UnicodeLittle
+     sun.java.command                              : org.apache.catalina.startup.Bootstrap start
+     sun.java.launcher                             : SUN_STANDARD
+     sun.jnu.encoding                              : Cp1252
+     sun.management.compiler                       : HotSpot Client Compiler
+     sun.os.patch.level                            : Service Pack 1
+     tomcat.util.buf.StringCache.byte.enabled      : true
+     user.country                                  : DE
+     user.dir                                      : F:\Projekt\ER-Report\target\container\tomcat6x\cargo-jira-home
+     user.home                                     : C:\Users\Maja
+     user.language                                 : de
+     user.name                                     : Maja
+     user.timezone                                 : Europe/Berlin
+     user.variant                                  : 
+
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'atlassian.webresource.disable.minification' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'atlassian.mail.senddisabled' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'atlassian.mail.fetchdisabled' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'com.atlassian.gadgets.dashboard.ignoreCache' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'atlassian.disable.caches' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'dbcp.removeAbandoned' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'dbcp.jmx' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'jira.jelly.on' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'jira.websudo.is.disabled' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'jira.show.perf.monitor' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.ChecklistLauncher] Setting system property 'jira.i18n.reloadbundles' to 'true' for development mode.
+2012-12-09 13:34:51,477 main INFO      [atlassian.jira.startup.JiraStartupLogger] Running JIRA startup checks.
+2012-12-09 13:34:51,697 main INFO      [atlassian.jira.startup.JiraHomeStartupCheck] The jira.home directory 'F:\Projekt\ER-Report\target\jira\home' is validated and locked for exclusive use by this instance.
+2012-12-09 13:34:51,697 main INFO      [atlassian.jira.startup.JiraStartupLogger] JIRA pre-database startup checks completed successfully.
+2012-12-09 13:34:52,268 main INFO      [jira.config.database.SystemTenantDatabaseConfigurationLoader] Reading database configuration from F:\Projekt\ER-Report\target\jira\home\dbconfig.xml
+2012-12-09 13:34:52,528 main INFO      [jira.config.database.DatabaseConfigurationManagerImpl] Now running Database Checklist Launcher
+2012-12-09 13:34:53,938 main WARN      [core.entity.jdbc.DatabaseUtil] Entity "RemoteIssueLink" has no table in the database
+2012-12-09 13:34:54,579 main INFO      [atlassian.jira.startup.DatabaseChecklistLauncher] JIRA database startup checks completed successfully.
+2012-12-09 13:34:54,589 main INFO      [jira.config.database.DatabaseConfigurationManagerImpl] Now running Post database-configuration launchers
+2012-12-09 13:34:58,050 main INFO      [jira.config.database.SystemTenantDatabaseConfigurationLoader] Reading database configuration from F:\Projekt\ER-Report\target\jira\home\dbconfig.xml
+2012-12-09 13:34:59,621 main WARN      [atlassian.jira.startup.DatabaseLauncher] 
+
+******************************************************************************************
+hsqldb is an in-memory database, and susceptible to corruption when abnormally terminated.
+DO NOT USE IN PRODUCTION, please switch to a regular database.
+******************************************************************************************
+
+2012-12-09 13:34:59,682 main INFO      [atlassian.jira.startup.DatabaseLauncher] Setting isolation level to '1' as this is the only isolation level 'hsql' supports.
+2012-12-09 13:34:59,682 main INFO      [atlassian.jira.startup.DatabaseLauncher] Database transactions enabled: true
+2012-12-09 13:34:59,692 main INFO      [atlassian.jira.startup.DatabaseLauncher] Database transaction isolation level: 1
+2012-12-09 13:34:59,692 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+Database configuration OK
+
+___ Database Configuration ________________
+
+     Loading entityengine.xml from                 : file:/F:/Projekt/ER-Report/target/container/tomcat6x/cargo-jira-home/webapps/jira/WEB-INF/classes/entityengine.xml
+     Entity model field type name                  : hsql
+     Entity model schema name                      : PUBLIC
+     Database Version                              : HSQL Database Engine - 1.8.0
+     Database Driver                               : HSQL Database Engine Driver - 1.8.0
+     Database URL                                  : jdbc:hsqldb:F:/Projekt/ER-Report/target/jira/home/database
+     Database JNDI config                          : hsql java:comp/env/jdbc/JiraDS
+
+2012-12-09 13:35:25,186 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Starting the JIRA Plugin System _________________
+
+2012-12-09 13:35:25,186 main INFO      [atlassian.plugin.manager.DefaultPluginManager] Initialising the plugin system
+2012-12-09 13:35:54,132 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\activeobjects-jira-spi-0.19.7.jar (1329322950000) created
+2012-12-09 13:35:54,933 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\activeobjects-plugin-0.19.7.jar (1329322948000) created
+2012-12-09 13:35:56,163 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\applinks-plugin-3.6.4.jar (1329322926000) created
+2012-12-09 13:35:56,373 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-feedback-plugin-1.1.3.jar (1329322948000) created
+2012-12-09 13:35:56,755 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-dashboard-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:35:58,095 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-directory-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:35:58,466 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-embedded-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:35:58,626 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-oauth-service-provider-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:36:00,626 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-opensocial-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:36:00,917 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-gadgets-publisher-plugin-3.1.21.jar (1329322950000) created
+2012-12-09 13:36:01,648 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-jira-rpc-plugin-5.0.5.jar (1329322950000) created
+2012-12-09 13:36:02,389 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-oauth-admin-plugin-1.3.10.jar (1329322950000) created
+2012-12-09 13:36:02,659 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-oauth-consumer-plugin-1.3.10.jar (1329322950000) created
+2012-12-09 13:36:02,700 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:02,710 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-oauth-consumer-spi-1.3.10.jar (1329322740000) created
+2012-12-09 13:36:03,030 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-oauth-service-provider-plugin-1.3.10.jar (1329322950000) created
+2012-12-09 13:36:03,290 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:03,290 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-oauth-service-provider-spi-1.3.10.jar (1329322732000) created
+2012-12-09 13:36:04,320 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-rest-module-2.5.5.jar (1329322948000) created
+2012-12-09 13:36:04,481 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-template-renderer-api-1.3.1.jar (1329322770000) created
+2012-12-09 13:36:05,021 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-template-renderer-velocity16-plugin-1.3.1.jar (1329322948000) created
+2012-12-09 13:36:06,001 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\atlassian-universal-plugin-manager-plugin-1.5.3.jar (1329322948000) created
+2012-12-09 13:36:06,332 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\auiplugin-3.5.5.jar (1329322948000) created
+2012-12-09 13:36:06,989 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:06,989 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\com.springsource.com.sun.syndication-0.9.0.jar (1329322948000) created
+2012-12-09 13:36:07,539 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:07,539 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\com.springsource.org.jdom-1.0.0.jar (1329322948000) created
+2012-12-09 13:36:07,780 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\crowd-rest-application-management-2.3.6.jar (1329322810000) created
+2012-12-09 13:36:08,050 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\crowd-rest-plugin-2.3.6.jar (1329322810000) created
+2012-12-09 13:36:08,230 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\embedded-crowd-admin-plugin-1.3.7.jar (1329322950000) created
+2012-12-09 13:36:08,320 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:08,320 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\httpclient-osgi-4.0.jar (1329322950000) created
+2012-12-09 13:36:08,380 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:08,380 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\httpcore-osgi-4.0.jar (1329322950000) created
+2012-12-09 13:36:08,490 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:08,500 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\icu4j-3.8-1.jar (1329322950000) created
+2012-12-09 13:36:08,680 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-admin-quicknav-plugin-5.0.jar (1329323724000) created
+2012-12-09 13:36:08,981 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-admin-summary-plugin-5.0.jar (1329323720000) created
+2012-12-09 13:36:09,131 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-application-properties-plugin-5.0.jar (1329323718000) created
+2012-12-09 13:36:09,391 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-bamboo-plugin-5.0.jar (1329322950000) created
+2012-12-09 13:36:11,571 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-fisheye-plugin-5.0.0.jar (1329322950000) created
+2012-12-09 13:36:11,982 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-gadgets-plugin-5.0.jar (1329323706000) created
+2012-12-09 13:36:12,762 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-ical-feed-1.0.2.jar (1329322948000) created
+2012-12-09 13:36:16,932 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-importers-plugin-4.0.jar (1329322950000) created
+2012-12-09 13:36:17,053 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-issue-link-applinks-common-plugin-5.0.jar (1329323798000) created
+2012-12-09 13:36:17,583 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-issue-link-confluence-plugin-5.0.jar (1329323806000) created
+2012-12-09 13:36:17,893 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-issue-link-remote-jira-plugin-5.0.jar (1329323802000) created
+2012-12-09 13:36:18,033 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-issue-link-web-plugin-5.0.jar (1329323802000) created
+2012-12-09 13:36:18,504 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-json-rpc-plugin-1.0.4.jar (1329322948000) created
+2012-12-09 13:36:18,724 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-language-pack-de_DE-5.0.0-rc2-v2r3852-2012-01-06.jar (1329322950000) created
+2012-12-09 13:36:18,874 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-language-pack-es_ES-5.0.0-rc2-v2r6467-2011-12-29.jar (1329322950000) created
+2012-12-09 13:36:19,074 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-language-pack-fr_FR-5.0.0-rc2-v2r1553-2012-01-05.jar (1329322948000) created
+2012-12-09 13:36:19,335 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-language-pack-ja_JP-5.0.0-rc2-v2r10187-2012-01-05.jar (1329322948000) created
+2012-12-09 13:36:19,445 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-languages-5.0-en_UK.jar (1329323250000) created
+2012-12-09 13:36:19,525 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-languages-5.0-en_US.jar (1329323250000) created
+2012-12-09 13:36:20,035 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-lookandfeel-plugin-5.0.jar (1329323726000) created
+2012-12-09 13:36:20,305 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-mail-plugin-5.0.jar (1329323794000) created
+2012-12-09 13:36:20,776 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-oauth-consumer-spi-plugin-5.0.jar (1329323668000) created
+2012-12-09 13:36:22,205 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-oauth-service-provider-spi-plugin-5.0.jar (1329323662000) created
+2012-12-09 13:36:22,876 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-project-config-plugin-5.0.jar (1329323716000) created
+2012-12-09 13:36:23,576 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-quick-edit-plugin-1.0.29.jar (1329322950000) created
+2012-12-09 13:36:24,127 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-rest-plugin-5.0.jar (1329323690000) created
+2012-12-09 13:36:24,877 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-sal-plugin-5.0.jar (1329323710000) created
+2012-12-09 13:36:25,218 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-share-plugin-5.0.jar (1329323796000) created
+2012-12-09 13:36:25,268 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-soy-plugin-5.0.jar (1329323720000) created
+2012-12-09 13:36:25,548 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-view-issue-plugin-5.0.jar (1329323722000) created
+2012-12-09 13:36:26,098 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\jira-whatsnew-plugin-1.1.0.1.jar (1329322948000) created
+2012-12-09 13:36:26,249 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:26,249 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\json-20070829-1.jar (1329322948000) created
+2012-12-09 13:36:26,619 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:26,619 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\nekohtml-1.9.12-1.jar (1329322950000) created
+2012-12-09 13:36:27,302 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:27,302 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\rome-1.0.jar (1329322948000) created
+2012-12-09 13:36:28,663 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\soy-template-plugin-1.0.0-m3.jar (1329322796000) created
+2012-12-09 13:36:30,884 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\stp-2.9.5.jar (1329322948000) created
+2012-12-09 13:36:32,741 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-aggregator-plugin-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:33,482 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:33,482 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-api-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:34,172 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-core-plugin-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:34,373 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-inline-actions-plugin-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:34,473 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-jira-inline-actions-plugin-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:35,263 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-jira-plugin-5.1.0.jar (1329322948000) created
+2012-12-09 13:36:36,214 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:36,214 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-spi-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:36,444 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\streams-thirdparty-plugin-5.1.0.jar (1329322950000) created
+2012-12-09 13:36:37,782 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\.bundled-plugins\workflow-designer-plugin-2.5.2.jar (1329322948000) created
+2012-12-09 13:36:37,903 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,013 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,083 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,153 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,223 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,283 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,353 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,673 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,803 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,914 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:38,984 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,054 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,124 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,194 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,364 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,584 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,704 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:39,824 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,165 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,385 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,495 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,555 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,645 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,705 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:40,765 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:41,395 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:41,706 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:41,756 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:41,856 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:42,249 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:42,759 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,060 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,170 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,370 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,460 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,560 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:43,620 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:44,110 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:44,191 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:44,671 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:45,201 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:45,522 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:45,672 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:45,942 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:46,462 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:46,533 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:46,693 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:46,933 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,053 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,155 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,295 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,375 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,525 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:47,676 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,236 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,376 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,426 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,486 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,546 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,617 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,677 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:36:48,757 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:15,637 Spring executor 7 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:15,898 Spring executor 5 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:15,918 Spring executor 10 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,008 Spring executor 1 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,108 Spring executor 8 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,168 Spring executor 6 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,728 Spring executor 10 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,829 Spring executor 2 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:16,979 Spring executor 10 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:20,292 Spring executor 10 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:21,485 main INFO      [atlassian.plugin.util.WaitUntil] Plugins that have yet to be enabled: [com.atlassian.jira.gadgets, com.atlassian.gadgets.embedded, tac.jira.languages.de_DE, tac.jira.languages.ja_JP, com.atlassian.streams.streams-thirdparty-plugin, tac.jira.languages.es_ES, com.atlassian.streams.streams-jira-plugin, com.atlassian.streams, tac.jira.languages.fr_FR, com.atlassian.gadgets.opensocial, com.atlassian.gadgets.directory, com.atlassian.gadgets.oauth.serviceprovider, com.atlassian.gadgets.dashboard, com.atlassian.streams.actions], 60 seconds remaining
+2012-12-09 13:37:21,956 Spring executor 1 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:21,996 Spring executor 8 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:22,166 Spring executor 6 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:22,176 Spring executor 10 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:22,506 Spring executor 1 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:22,567 main INFO      [atlassian.plugin.util.WaitUntil] Plugins that have yet to be enabled: [com.atlassian.streams.streams-thirdparty-plugin, com.atlassian.streams.streams-jira-plugin, com.atlassian.streams, com.atlassian.gadgets.directory], 58 seconds remaining
+2012-12-09 13:37:23,777 main INFO      [atlassian.plugin.util.WaitUntil] Plugins that have yet to be enabled: [com.atlassian.streams.streams-jira-plugin, com.atlassian.streams, com.atlassian.gadgets.directory], 57 seconds remaining
+2012-12-09 13:37:24,102 Spring executor 7 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:24,102 Spring executor 7 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:24,162 Spring executor 2 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:27,203 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\ER-Report-1.0.jar (1355055868605) created
+2012-12-09 13:37:27,464 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:27,464 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\commons-fileupload-1.2.1.jar (1355056283444) created
+2012-12-09 13:37:28,444 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\developer-toolbox-plugin-2.0.3.jar (1355056284475) created
+2012-12-09 13:37:29,345 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\fastdev-plugin-1.12.1.jar (1355056284414) created
+2012-12-09 13:37:29,465 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:29,465 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\httpservice-bridge-0.6.1.jar (1355056283994) created
+2012-12-09 13:37:29,646 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:29,646 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\org.apache.felix.webconsole-1.2.8.jar (1355056283624) created
+2012-12-09 13:37:30,539 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:30,539 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\org.osgi.compendium-1.2.0.jar (1355056283744) created
+2012-12-09 13:37:30,740 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\pdkinstall-plugin-0.4.jar (1355056283424) created
+2012-12-09 13:37:31,080 main INFO      [atlassian.plugin.loaders.ScanningPluginLoader] Plugin Unit: F:\Projekt\ER-Report\target\jira\home\plugins\installed-plugins\plugin-data-editor-1.2.jar (1355056284525) created
+2012-12-09 13:37:31,150 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:31,240 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:31,340 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:31,400 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:31,430 main INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:31,720 Spring executor 7 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:32,851 Spring executor 7 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:34,413 Spring executor 2 INFO      [plugin.util.resource.AlternativeDirectoryResourceLoader] Found alternative resource directory F:\Projekt\ER-Report\src\main\resources
+2012-12-09 13:37:35,595 main INFO      [atlassian.plugin.manager.DefaultPluginManager] Plugin system started in 0:02:10.399
+2012-12-09 13:37:35,926 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Plugin System Started _________________
+
+2012-12-09 13:37:38,256 main INFO      [atlassian.jira.upgrade.ConsistencyCheckImpl] The Server ID for this JIRA instance is: [BP8Q-WXN6-SKX3-NB5M]
+2012-12-09 13:37:40,893 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ User Directories (Ordered) ______________
+
+     INTERNAL                                      : JIRA Internal Directory
+          Implementing Class                            : com.atlassian.crowd.directory.InternalDirectory
+          Allowed Operations                            : CREATE_GROUP,
+                                                          CREATE_ROLE,
+                                                          CREATE_USER,
+                                                          DELETE_GROUP,
+                                                          DELETE_ROLE,
+                                                          DELETE_USER,
+                                                          UPDATE_GROUP,
+                                                          UPDATE_GROUP_ATTRIBUTE,
+                                                          UPDATE_ROLE,
+                                                          UPDATE_ROLE_ATTRIBUTE,
+                                                          UPDATE_USER,
+                                                          UPDATE_USER_ATTRIBUTE
+          Encryption Type                               : atlassian-security
+          Active                                        : true
+          Attributes                                    : 
+               user_encryption_method                        : atlassian-security
+
+___ Core Application Properties ___________
+
+     Version                                       : 5.0
+     Build #                                       : 713
+     Build Date                                    : Wed Feb 15 00:00:00 CET 2012
+     Installation Type                             : unknown
+     Server ID                                     : BP8Q-WXN6-SKX3-NB5M
+     Base URL                                      : http://Maja-PC:2990/jira
+     Default Language                              : Deutsch (Deutschland)
+     External User Management                      : OFF
+
+___ Application Properties ________________
+
+     com.atlassian.activeobjects.admin.ActiveObjectsPluginToTablesMapping : null
+     com.atlassian.jira.plugin.ext.bamboo:build    : 1
+     com.atlassian.sal.jira:build                  : 2
+     com.atlassian.streams.streams-jira-plugin:build : 1
+     jira.ajax.autocomplete.issuepicker.enabled    : true
+     jira.ajax.autocomplete.labelsuggestion.limit  : 20
+     jira.ajax.autocomplete.limit                  : 20
+     jira.alertheader.visibility                   : private
+     jira.assignee.change.is.sent.to.both.parties  : true
+     jira.attachment.allow.zip.support             : true
+     jira.attachment.do.not.expand.as.zip.extensions.list : docx, docm, dotx, dotm, xlsx, xlsm, xltx, xltm, xlsb, xlam, pptx, pptm, potx, potm, ppam, ppsx, ppsm, sldx, sldm, thmx, odt, odp, ods, odg, odb, odf, ott, otp, ots, otg, odm, sxw, stw, sxc, stc, sxi, sti, sxd, std, sxg
+     jira.attachment.download.mime.sniffing.workaround : workaround
+     jira.attachment.number.of.zip.entries         : 30
+     jira.autoexport                               : true
+     jira.avatar.default.id                        : 10011
+     jira.avatar.megapixels                        : 10
+     jira.avatar.user.anonymous.id                 : 10123
+     jira.avatar.user.default.id                   : 10122
+     jira.baseurl                                  : http://Maja-PC:2990/jira
+     jira.browser.unsupported.warnings.disabled    : false
+     jira.bulk.edit.limit.issue.count              : 1000
+     jira.chart.days.previous.limit.daily          : 300
+     jira.chart.days.previous.limit.hourly         : 10
+     jira.chart.days.previous.limit.monthly        : 7500
+     jira.chart.days.previous.limit.quarterly      : 22500
+     jira.chart.days.previous.limit.weekly         : 1750
+     jira.chart.days.previous.limit.yearly         : 36500
+     jira.clone.linktype.name                      : Cloners
+     jira.clone.prefix                             : CLONE -
+     jira.comment.level.visibility.groups          : false
+     jira.constant.default.resolution              : 1
+     jira.dashboard.max.gadgets                    : 20
+     jira.databasequery.batch.size                 : 100
+     jira.date.picker.java.format                  : d/MMM/yy
+     jira.date.picker.javascript.format            : %e/%b/%y
+     jira.date.time.picker.java.format             : dd/MMM/yy h:mm a
+     jira.date.time.picker.javascript.format       : %e/%b/%y %I:%M %p
+     jira.date.time.picker.use.iso8061             : false
+     jira.db.txns.disabled                         : false
+     jira.default.jndi.name                        : java:comp/env/jdbc/JiraDS
+     jira.disable.login.gadget                     : false
+     jira.disable.multipart.get.http.request       : true
+     jira.edition                                  : enterprise
+     jira.email.fromheader.format                  : ${fullname} (JIRA)
+     jira.exportimport.cleanxml                    : true
+     jira.home                                     : 
+     jira.i18n.include.meta-data                   : true
+     jira.i18n.language.index                      : english
+     jira.index.batch.maxbuffereddocs              : 300
+     jira.index.batch.maxmergedocs                 : 2147483647
+     jira.index.batch.mergefactor                  : 50
+     jira.index.interactive.maxbuffereddocs        : 300
+     jira.index.interactive.maxmergedocs           : 2147483647
+     jira.index.interactive.mergefactor            : 4
+     jira.index.lock.waittime                      : 30000
+     jira.index.max.reindexes                      : 4000
+     jira.index.maxfieldlength                     : 10000
+     jira.index.update.bulk.optimization           : 400
+     jira.issue.actions.order                      : asc
+     jira.issue.desc.environment                   : For example operating system, software platform and/or hardware specifications (include as appropriate for the issue).
+     jira.issue.desc.original.timetrack            : This value can not be changed after work has begun on the issue.
+     jira.issue.desc.timetrack                     : An estimate of how much work remains until this issue will be resolved.<br>
+The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number)<br>
+Examples: 4d, 5h 30m, 60m and 3w.
+     jira.issueindex.fetch.size                    : 200
+     jira.lf.application.id                        : jira
+     jira.lf.date.complete                         : dd/MMM/yy h:mm a
+     jira.lf.date.day                              : EEEE h:mm a
+     jira.lf.date.dmy                              : dd/MMM/yy
+     jira.lf.date.relativize                       : true
+     jira.lf.date.time                             : h:mm a
+     jira.lf.favicon.hires.url                     : /images/64jira.png
+     jira.lf.favicon.url                           : /favicon.ico
+     jira.lf.gadget.color1                         : #369
+     jira.lf.gadget.color2                         : #900925
+     jira.lf.gadget.color3                         : #d94625
+     jira.lf.gadget.color4                         : #346006
+     jira.lf.gadget.color5                         : #003366
+     jira.lf.gadget.color6                         : #411E66
+     jira.lf.gadget.color7                         : #bbb
+     jira.lf.logo.height                           : 30
+     jira.lf.logo.url                              : /images/jira111x30.png
+     jira.lf.logo.width                            : 111
+     jira.lf.menu.bgcolour                         : #326ca6
+     jira.lf.menu.separator                        : #f0f0f0
+     jira.lf.menu.textcolour                       : #ffffff
+     jira.lf.text.activelinkcolour                 : #326ca6
+     jira.lf.text.headingcolour                    : #292929
+     jira.lf.text.linkcolour                       : #326ca6
+     jira.lf.top.bgcolour                          : #003366
+     jira.lf.top.hilightcolour                     : #326ca6
+     jira.lf.top.separator.bgcolor                 : #003366
+     jira.lf.top.textcolour                        : #ffffff
+     jira.lf.top.texthilightcolour                 : #f0f0f0
+     jira.max.AdminPage.history.items              : 5
+     jira.max.Issue.history.items                  : 50
+     jira.max.JQLQuery.history.items               : 10
+     jira.max.history.items                        : 10
+     jira.max.issue.filter.dropdown.items          : 10
+     jira.max.issue.history.dropdown.items         : 6
+     jira.maximum.authentication.attempts.allowed  : 3
+     jira.mode                                     : public
+     jira.option.allowattachments                  : true
+     jira.option.allowcookies                      : true
+     jira.option.allowsubtasks                     : true
+     jira.option.allowthumbnails                   : true
+     jira.option.allowunassigned                   : false
+     jira.option.emailvisible                      : show
+     jira.option.ignore.url.with.key               : true
+     jira.option.indexing                          : true
+     jira.option.issuelinking                      : true
+     jira.option.logoutconfirm                     : never
+     jira.option.rpc.allow                         : true
+     jira.option.timetracking                      : true
+     jira.option.user.externalmanagement           : false
+     jira.option.voting                            : true
+     jira.option.watching                          : true
+     jira.path.attachments                         : ./attachments
+     jira.path.attachments.use.default.directory   : true
+     jira.path.backup                              : ./export
+     jira.path.index.use.default.directory         : true
+     jira.project.summary.max.issues               : 3
+     jira.projectkey.description                   : admin.projects.key.description
+     jira.projectkey.pattern                       : ([A-Z][A-Z]+)
+     jira.projectkey.reservedwords.list            : PRN, AUX, CLOCK$, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, CON, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9
+     jira.projectkey.warning                       : admin.errors.must.specify.unique.project.key
+     jira.releasenotes.default                     : Html
+     jira.releasenotes.templatenames               : Html, Text
+     jira.releasenotes.templates                   : releasenotes-html.vm, releasenotes-text.vm
+     jira.scheme.default.issue.type                : 10000
+     jira.schemes.comparison.max                   : 5
+     jira.screenshotapplet.enabled                 : true
+     jira.screenshotapplet.linux.enabled           : false
+     jira.search.fullcontentview.pagebreaks        : true
+     jira.search.maxclauses                        : 65000
+     jira.search.views.default.max                 : 1000
+     jira.search.views.max.limit                   : 1000
+     jira.search.views.max.unlimited.group         : 
+     jira.sendmail.recipient.batch.size            : 100
+     jira.setup                                    : true
+     jira.show.contact.administrators.form         : false
+     jira.subscription.email.max.issues            : 200
+     jira.subtask.quickcreateform.fields           : summary,issuetype,assignee,timetracking
+     jira.subtask.quickcreateform.template         : templates/jira/issue/subtask/quickcreationform-vertical.vm
+     jira.table.cols.dashboard                     : issuetype, issuekey, summary, priority
+     jira.table.cols.subtasks                      : issuetype, status, assignee, progress
+     jira.table.cols.voted                         : issuetype, issuekey, summary, priority, status
+     jira.table.cols.watched                       : issuetype, issuekey, summary, priority, status
+     jira.table.gadget.max.rows                    : 50
+     jira.thumbnail.maxheight                      : 200
+     jira.thumbnail.maxwidth                       : 200
+     jira.timetracking.copy.comment.to.work.desc.on.transition : true
+     jira.timetracking.days.per.week               : 5
+     jira.timetracking.default.unit                : MINUTE
+     jira.timetracking.estimates.legacy.behaviour  : false
+     jira.timetracking.format                      : pretty
+     jira.timetracking.hours.per.day               : 8
+     jira.title                                    : Your Company JIRA
+     jira.trustedapps.timeout.default              : 10000
+     jira.trustedapps.urlmatch.default             : /sr/jira.issueviews:searchrequest
+/secure/RunPortlet
+/rest
+/rpc/soap
+/plugins/servlet/streams
+/plugins/servlet/applinks
+     jira.usermanagement.maxdisplaymembers         : 200
+     jira.version.patched                          : 646
+     jira.view.issue.links.sort.order              : type, status, priority
+     jira.view.issue.show.quicksubtask.when.no.subtasks : false
+     jira.viewcvs.root.type                        : cvsroot
+     jira.webresource.flushcounter                 : 1
+     jira.webresource.superbatch.flushcounter      : 1
+     jira.websudo.is.disabled                      : false
+     jira.websudo.timeout                          : 10
+     jira.whitelist.disabled                       : false
+     jira.whitelist.rules                          : null
+     jira.xsrf.enabled                             : true
+     show.plugin.marketing.hints                   : true
+     user.default.share.private                    : true
+     user.issues.per.page                          : 50
+     user.keyboard.shortcuts.disabled              : false
+     user.notifications.mimetype                   : html
+     user.notify.own.changes                       : true
+     user.show.actions.in.navigator                : true
+     webwork.i18n.encoding                         : UTF-8
+     webwork.multipart.maxSize                     : 10485760
+
+___ License Details _______________________
+
+     License Set                                   : true
+     Entitled To Support                           : true
+     Evaluation                                    : false
+     Description                                   : Test license for plugin developers
+     SEN                                           : 
+     Organisation                                  : Atlassian
+     Partner                                       : 
+     Maximum Number Of Users                       : 5
+
+
+___ Database Statistics ___________________
+
+     Issues                                        : 0
+     Projects                                      : 0
+     Custom Fields                                 : 0
+     Workflows                                     : 0
+     Users                                         : 1
+     Groups                                        : 3
+     Attachments                                   : 0
+     Comments                                      : 0
+
+___ Upgrade History _______________________
+
+     4.4-rc1#646
+          Time Performed                                : 2011-07-01 12:23:16.852
+
+
+___ File Paths ____________________________
+
+     JIRA Home                                     : F:\Projekt\ER-Report\target\jira\home
+     Location of atlassian-jira.log                : F:\Projekt\ER-Report\target\jira\home\log\atlassian-jira.log
+     Index Path                                    : F:\Projekt\ER-Report\target\jira\home\caches\indexes
+     Attachment Path                               : F:\Projekt\ER-Report\target\jira\home\data\attachments
+
+
+___ User Plugins ____________________________
+
+     Number                                        : 9
+
+     Apache Commons FileUpload Bundle              : org.apache.commons.fileupload-1.2.1
+          Version                                       : 1.2.1
+          Status                                        : enabled
+          Vendor                                        : The Apache Software Foundation
+          Description                                   : 
+
+     Apache Felix Web Management Console           : org.apache.felix.webconsole-1.2.8
+          Version                                       : 1.2.8
+          Status                                        : enabled
+          Vendor                                        : The Apache Software Foundation
+          Description                                   : Web Based Management Console for OSGi Frameworks. See        http://felix.apache.org/apache-felix-web-console.html for more        information on this bundle.
+
+     Atlassian Developer Toolbox                   : com.atlassian.devrel.developer-toolbox-plugin
+          Version                                       : 2.0.3
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : A set of tools to aid plugin developers.
+
+     Atlassian PDK Install Plugin                  : com.atlassian.pdkinstall
+          Version                                       : 0.4
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : 
+
+     ER-Report                                     : com.capgemini.hyc.ER-Report
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Example Company
+          Description                                   : This is the com.capgemini.hyc:ER-Report plugin for Atlassian JIRA.
+
+     OSGi R4 Compendium Bundle                     : org.osgi.compendium-4.1.0
+          Version                                       : 4.1.0
+          Status                                        : enabled
+          Vendor                                        : OSGi Alliance
+          Description                                   : OSGi Service Platform Release 4 Compendium Interfaces and Classes.
+
+     fastdev-plugin                                : com.atlassian.labs.fastdev-plugin
+          Version                                       : 1.12.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that detects shift-reload commands from the browser and reloads the underlying plugin.
+
+     httpservice-bridge                            : com.atlassian.labs.httpservice.bridge-0.6.1
+          Version                                       : 0.6.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Base POM for Atlassian projects
+
+     plugin-data-editor                            : com.atlassian.plugins.plugin-data-editor
+          Version                                       : 1.2
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that provides an in-product editor utility for data stored with SAL's PluginSettings or ActiveObjects.
+
+
+
+___ System Plugins __________________________
+
+     Number                                        : 80
+
+     ActiveObjects Plugin - OSGi Bundle            : com.atlassian.activeobjects.activeobjects-plugin
+          Version                                       : 0.19.7
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : An OSGi bundle that provides a service that allows plugins to persist objects using the ActiveObjects framework
+
+     Apache HttpClient OSGi bundle                 : org.apache.httpcomponents.httpclient-4.0
+          Version                                       : 4.0
+          Status                                        : enabled
+          Vendor                                        : Apache Software Foundation
+          Description                                   : HttpComponents Client (OSGi bundle)
+
+     Apache HttpCore OSGi bundle                   : org.apache.httpcomponents.httpcore-4.0
+          Version                                       : 4.0
+          Status                                        : enabled
+          Vendor                                        : Apache Software Foundation
+          Description                                   : HttpComponents Core (OSGi bundle)
+
+     Applinks Product Plugin                       : com.atlassian.applinks.applinks-plugin
+          Version                                       : 3.6.4
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that facilitates discovery, connections and authentication with remote applications
+
+     Atlassian Embedded Crowd - Administration Plugin : com.atlassian.crowd.embedded.admin
+          Version                                       : 1.3.7
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides the administration of local and remote user directories.
+
+     Atlassian Gadgets OAuth Service Provider Plugin : com.atlassian.gadgets.oauth.serviceprovider
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that makes OAuth Service Providers Gadget aware.
+
+     Atlassian JIRA - Plugins - Admin Quick Navigation : com.atlassian.jira.jira-admin-quicknav-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Inserts quick navigation component in JIRA Administration Panel
+
+     Atlassian JIRA - Plugins - Admin Summary Component : com.atlassian.jira.jira-admin-summary-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Supplies Content to the JIRA Administration Summary Page
+
+     Atlassian JIRA - Plugins - Application Properties : com.atlassian.jira.jira-application-properties-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides advanced application properties configuration
+
+     Atlassian JIRA - Plugins - Closure Template Renderer : com.atlassian.jira.jira-soy-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides renderer for Closure templates
+
+     Atlassian JIRA - Plugins - Common AppLinks Based Issue Link Plugin : com.atlassian.jira.jira-issue-link-applinks-common-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : Provides the common utilities for AppLinks based issue link plugins
+
+     Atlassian JIRA - Plugins - Confluence Link    : com.atlassian.jira.jira-issue-link-confluence-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : Provides creation and rendering of issue links to Confluence pages
+
+     Atlassian JIRA - Plugins - Gadgets Plugin     : com.atlassian.jira.gadgets
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides Gadgets and REST endpoints bundled with JIRA
+
+     Atlassian JIRA - Plugins - Issue Web Link     : com.atlassian.jira.jira-issue-link-web-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : Provides creation and rendering of issue links to web pages
+
+     Atlassian JIRA - Plugins - Look And Feel Logo Upload Plugin : com.atlassian.jira.lookandfeel
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides logo upload capabilities
+
+     Atlassian JIRA - Plugins - Mail Plugin        : com.atlassian.jira.jira-mail-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : JIRA provides cutting edge issue tracking and project management.
+
+     Atlassian JIRA - Plugins - OAuth Consumer SPI : com.atlassian.jira.oauth.consumer
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides the Consumer SPI implementation required for OAuth in JIRA.
+
+     Atlassian JIRA - Plugins - OAuth Service Provider SPI : com.atlassian.jira.oauth.serviceprovider
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides the OAuth Service Provider SPI implementation required for OAuth in JIRA.
+
+     Atlassian JIRA - Plugins - Project Config Plugin : com.atlassian.jira.jira-project-config-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides easier project administration with JIRA
+
+     Atlassian JIRA - Plugins - Quick Edit Plugin  : com.atlassian.jira.jira-quick-edit-plugin
+          Version                                       : 1.0.29
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This is the com.atlassian.jira:jira-quick-edit-plugin plugin for Atlassian JIRA.
+
+     Atlassian JIRA - Plugins - REST Plugin        : com.atlassian.jira.rest
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides a REST interface for JIRA
+
+     Atlassian JIRA - Plugins - Remote JIRA Link   : com.atlassian.jira.jira-issue-link-remote-jira-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : Provides creation and rendering of links to remote JIRA issues
+
+     Atlassian JIRA - Plugins - SAL Plugin         : com.atlassian.sal.jira
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : JIRA implementation of the Shared Application Access Layer (SAL)
+
+     Atlassian JIRA - Plugins - Share Content Component : com.atlassian.jira.jira-share-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Allows users to share issue and searches
+
+     Atlassian JIRA - Plugins - View Issue Panels  : com.atlassian.jira.jira-view-issue-plugin
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : ${project.organization.name}
+          Description                                   : Provides WebPanels for the View Issue Page
+
+     Atlassian OAuth Admin Plugin                  : com.atlassian.oauth.admin
+          Version                                       : 1.3.10
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that provides a single tabbed view for administering OAuth consumers and service provider information.
+
+     Atlassian OAuth Consumer Plugin               : com.atlassian.oauth.consumer
+          Version                                       : 1.3.10
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that makes it possible for applications to become Consumers.
+
+     Atlassian OAuth Consumer SPI                  : com.atlassian.oauth.atlassian-oauth-consumer-spi-1.3.10
+          Version                                       : 1.3.10
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Consumer SPIs to allow applications to provide custom implementations of storing token and consumer info
+
+     Atlassian OAuth Service Provider Plugin       : com.atlassian.oauth.serviceprovider
+          Version                                       : 1.3.10
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin that makes it possible for applications to become Service Providers.
+
+     Atlassian OAuth Service Provider SPI          : com.atlassian.oauth.atlassian-oauth-service-provider-spi-1.3.10
+          Version                                       : 1.3.10
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Service Provider SPIs to allow applications to provide custom implementations of storing token consumer info
+
+     Atlassian REST - Module Types                 : com.atlassian.plugins.rest.atlassian-rest-module
+          Version                                       : 2.5.5
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : A plugin that contains REST module types
+
+     Atlassian Soy Templates - Plugin              : com.atlassian.soy.soy-template-plugin
+          Version                                       : 1.0.0-m3
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Base POM for Atlassian projects
+
+     Atlassian Template Renderer API               : com.atlassian.templaterenderer.api
+          Version                                       : 1.3.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : API and plugins for easily rendering content from different template engines.
+
+     Atlassian Template Renderer Velocity 1.6 Plugin : com.atlassian.templaterenderer.atlassian-template-renderer-velocity1.6-plugin
+          Version                                       : 1.3.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : API and plugins for easily rendering content from different template engines.
+
+     Atlassian UI Plugin                           : com.atlassian.auiplugin
+          Version                                       : 3.5.5
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : An Atlassian plugin that contains the core javascript files used in Atlassian products.
+
+     Atlassian Universal Plugin Manager Plugin     : com.atlassian.upm.atlassian-universal-plugin-manager-plugin
+          Version                                       : 1.5.3
+          Status                                        : enabled
+          Vendor                                        : Atlassian Pty Ltd
+          Description                                   : This is the plugin that provides the Atlassian Universal Plugin Manager.
+
+     Crowd REST API                                : crowd-rest-application-management
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : Crowd REST API - Application Management
+
+     Crowd REST API                                : crowd-rest-plugin
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : Crowd REST API
+
+     Crowd System Password Encoders                : crowd.system.passwordencoders
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : Crowd Password Encoders shipped with Crowd
+
+     Embedded Gadgets Plugin                       : com.atlassian.gadgets.embedded
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin which allows gadgets to be embedded in pages
+
+     English (United Kingdom) Language Pack        : com.atlassian.jira.jira-languages.en_UK
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This plugin contains translations the core keys in JIRA for English (United Kingdom).
+
+     English (United States) Language Pack         : com.atlassian.jira.jira-languages.en_US
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This plugin contains translations the core keys in JIRA for English (United States).
+
+     FishEye Plugin                                : com.atlassian.jirafisheyeplugin
+          Version                                       : 5.0.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : JIRA Fisheye Plugin
+
+     French (France) Language Pack                 : tac.jira.languages.fr_FR
+          Version                                       : 5.0.0-rc2-v2r1553-2012-01-05
+          Status                                        : enabled
+          Vendor                                        : Atlassian Community
+          Description                                   : This plugin contains translations for fr_FR
+
+     Gadget Dashboard Plugin                       : com.atlassian.gadgets.dashboard
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin which renders a dashboard of gadgets
+
+     Gadget Directory Plugin                       : com.atlassian.gadgets.directory
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin which renders a directory of gadgets
+
+     Gadget Spec Publisher Plugin                  : com.atlassian.gadgets.publisher
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin which provides a way to publish gadget specs found in plugins
+
+     German (Germany) Language Pack                : tac.jira.languages.de_DE
+          Version                                       : 5.0.0-rc2-v2r3852-2012-01-06
+          Status                                        : enabled
+          Vendor                                        : Atlassian Community
+          Description                                   : This plugin contains translations for de_DE
+
+     ICU4J                                         : com.atlassian.bundles.icu4j-3.8.0.1
+          Version                                       : 3.8.0.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian Pty Ltd
+          Description                                   : ICU4J as an OSGi bundle
+
+     JDOM DOM Processor                            : com.springsource.org.jdom-1.0.0
+          Version                                       : 1.0.0
+          Status                                        : enabled
+          Vendor                                        : SpringSource
+          Description                                   : 
+
+     JIRA Active Objects SPI implementation        : com.atlassian.activeobjects.jira.spi
+          Version                                       : 0.19.7
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems
+          Description                                   : A plugin that provides the DataSourceProvider service
+
+     JIRA Activity Stream Plugin                   : com.atlassian.streams.streams-jira-plugin
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Lists recent activity in a single project, or in all projects.
+
+     JIRA Bamboo Plugin                            : com.atlassian.jira.plugin.ext.bamboo
+          Version                                       : 5.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : Allows you to see builds and telemetry from a remote Bamboo server
+
+     JIRA Feedback Plugin                          : com.atlassian.plugin.atlassian-feedback-plugin
+          Version                                       : 1.1.3
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides a dialog for customers to provide feedback directly to Atlassian from within JIRA.
+
+     JIRA Importers Plugin (JIM)                   : com.atlassian.jira.plugins.jira-importers-plugin
+          Version                                       : 4.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : A plugin (originally part of JIRA 4.2 and older) which provides capability to import to JIRA issues from 3rd party issue trackers: Bugzilla, FogBugz and Mantis.
+
+     JIRA JSON-RPC Plugin                          : com.atlassian.jira.rpc.jira-json-rpc-plugin
+          Version                                       : 1.0.4
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software
+          Description                                   : Exposes JIRA SOAP services using JSON-RPC
+
+     JIRA Streams Inline Actions Plugin            : com.atlassian.streams.jira.inlineactions
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : JIRA Streams Inline Actions Plugin
+
+     JIRA Usage Hints                              : jira.usage.hints
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This library includes the web fragments for JIRA usage hints displayed on issue operation dialogs. It should never be disabled.
+
+     JIRA What's New Plugin                        : com.atlassian.jira.whatsnew.jira-whatsnew-plugin
+          Version                                       : 1.1.0.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Displays a whats new dialog for users just having upgraded to this version of JIRA.
+
+     JQL Functions                                 : jira.jql.function
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This plugin implements a JQL function in JIRA.
+
+     JSON Library                                  : com.atlassian.bundles.json-20070829.0.0.1
+          Version                                       : 20070829.0.0.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian Pty Ltd
+          Description                                   : Library for manipulating JSON
+
+     Japanese (Japan) Language Pack                : tac.jira.languages.ja_JP
+          Version                                       : 5.0.0-rc2-v2r10187-2012-01-05
+          Status                                        : enabled
+          Vendor                                        : Atlassian Community
+          Description                                   : This plugin contains translations for ja_JP
+
+     Keyboard Shortcuts Plugin                     : jira.keyboard.shortcuts
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : A plugin that defines a number of keyboard shortcuts.
+
+     Neko HTML                                     : com.atlassian.bundles.nekohtml-1.9.12.1
+          Version                                       : 1.9.12.1
+          Status                                        : enabled
+          Vendor                                        : Atlassian Pty Ltd
+          Description                                   : Neko HTML library as an OSGi bundle
+
+     Opensocial Plugin                             : com.atlassian.gadgets.opensocial
+          Version                                       : 3.1.21
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Plugin for OpenSocial API Support and Gadget Rendering
+
+     ROME, RSS and atOM utilitiEs for Java         : rome.rome-1.0
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Sun Microsystems
+          Description                                   : All Roads Lead to ROME. ROME is a set of Atom/RSS Java utilities that make it		easy to work in Java with most syndication formats. Today it accepts all flavors of RSS		(0.90, 0.91, 0.92, 0.93, 0.94, 1.0 and 2.0), Atom 0.3 and Atom 1.0 feeds. Rome includes		a set of parsers and generators for the various flavors of feeds, as well as converters		to convert from one format to another. The parsers can give you back Java objects that		are either specific for the format you want to work with, or a generic normalized		SyndFeed object that lets you work on with the data without bothering about the		underlying format.
+
+     ROME: RSS/Atom syndication and publishing tools : com.springsource.com.sun.syndication-0.9.0
+          Version                                       : 0.9.0
+          Status                                        : enabled
+          Vendor                                        : SpringSource
+          Description                                   : 
+
+     RPC JIRA Plugin                               : com.atlassian.jira.ext.rpc
+          Version                                       : 5.0.5
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : The standard JIRA RPC services, both SOAP and XML-RPC.
+
+     Spanish (Spain) Language Pack                 : tac.jira.languages.es_ES
+          Version                                       : 5.0.0-rc2-v2r6467-2011-12-29
+          Status                                        : enabled
+          Vendor                                        : Atlassian Community
+          Description                                   : This plugin contains translations for es_ES
+
+     Streams API                                   : com.atlassian.streams.streams-api-5.1.0
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Lists recent activity in a single project, or in all projects.
+
+     Streams Core Plugin                           : com.atlassian.streams.core
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : Streams Core Plugin
+
+     Streams Inline Actions Plugin                 : com.atlassian.streams.actions
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : Streams Inline Actions Plugin
+
+     Streams Plugin                                : com.atlassian.streams
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian Software Systems Pty Ltd
+          Description                                   : Streams Plugin
+
+     Streams SPI                                   : com.atlassian.streams.streams-spi-5.1.0
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Lists recent activity in a single project, or in all projects.
+
+     Streams Third Party Provider Plugin           : com.atlassian.streams.streams-thirdparty-plugin
+          Version                                       : 5.1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Lists recent activity in a single project, or in all projects.
+
+     Support Tools Plugin                          : com.atlassian.support.stp
+          Version                                       : 2.9.5
+          Status                                        : enabled
+          Vendor                                        : Atlassian Support
+          Description                                   : This is the Support Tools Plugin, developed to help Atlassian customers with our products.
+
+     User Format                                   : jira.user.format
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This plugin renders a user in JIRA.
+
+     User Profile Panels                           : jira.user.profile.panels
+          Version                                       : 1.0
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : This library includes the panels included on the user profile page.
+
+     Workflow Designer Plugin                      : com.atlassian.jira.plugins.jira-workflow-designer
+          Version                                       : 2.5.2
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : The visual way to edit JIRA Workflows.
+
+     jira-ical-feed                                : com.atlassian.jira.extra.jira-ical-feed
+          Version                                       : 1.0.2
+          Status                                        : enabled
+          Vendor                                        : Atlassian
+          Description                                   : Provides an iCal feed of JIRA issues and versions
+
+
+___ Listeners _____________________________
+
+     Instance Count                                : 4
+
+     Issue Cache Listener                          : com.atlassian.jira.event.listeners.cache.IssueCacheListener
+     Mail Listener                                 : com.atlassian.jira.event.listeners.mail.MailListener
+     Issue Assignment Listener                     : com.atlassian.jira.event.listeners.history.IssueAssignHistoryListener
+     Issue Index Listener                          : com.atlassian.jira.event.listeners.search.IssueIndexListener
+
+___ Services ______________________________
+
+     Instance Count                                : 3
+
+     Backup Service                                : com.atlassian.jira.service.services.export.ExportService
+          Service Delay                                 : 43200000ms
+          USE_DEFAULT_DIRECTORY                         : true
+     Mail Queue Service                            : com.atlassian.jira.service.services.mail.MailQueueService
+          Service Delay                                 : 60000ms
+     Service Provider Token Remover                : com.atlassian.sal.jira.scheduling.JiraPluginSchedulerService
+          Service Delay                                 : 28800000ms
+          pluginJobName                                 : Service Provider Token Remover
+          repeatInterval                                : 28800000
+          initiallyFired                                : true
+
+___ Trusted Applications __________________
+
+     Instance Count                                : 0
+
+
+___ Java Class Paths ______________________
+
+     sun.boot.class.path                           : C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\resources.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\rt.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\sunrsasign.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\jsse.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\jce.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\charsets.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\modules\jdk.boot.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\jre\classes
+
+     java.library.path                             : C:\Program Files (x86)\Java\jdk1.6.0_27\jre\bin;
+                                                     C:\Windows\Sun\Java\bin;
+                                                     C:\Windows\system32;
+                                                     C:\Windows;
+                                                     C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/bin/client;
+                                                     C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/bin;
+                                                     C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/lib/i386;
+                                                     C:\Program Files (x86)\AMD APP\bin\x86_64;
+                                                     C:\Program Files (x86)\AMD APP\bin\x86;
+                                                     C:\Windows\system32;
+                                                     C:\Windows;
+                                                     C:\Windows\System32\Wbem;
+                                                     C:\Windows\System32\WindowsPowerShell\v1.0\;
+                                                     C:\Program Files (x86)\Git\cmd;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\bin;
+                                                     C:\Users\Maja\atlassian-plugin-sdk-4.0\bin;
+                                                     C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;
+                                                     K:\eclipse indigo\eclipse;
+                                                     ;
+                                                     .
+
+     java.endorsed.dirs                            : C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\endorsed
+
+     java.ext.dirs                                 : C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\ext;
+                                                     C:\Windows\Sun\Java\lib\ext
+
+     java.class.path                               : F:\Projekt\ER-Report\target\container\tomcat6x\apache-tomcat-6.0.20\bin\bootstrap.jar;
+                                                     C:\Program Files (x86)\Java\jdk1.6.0_27\lib\tools.jar
+
+
+2012-12-09 13:37:40,984 main INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+******************************************************************************
+JIRA 5.0 build: 713 started. You can now access JIRA through your web browser.
+******************************************************************************
+
+2012-12-09 13:37:41,064 Modification Check:thread-1 INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Modifications ___________________________
+
+     Modified Files                                : None
+     Removed Files                                 : None
+
+2012-12-09 13:37:41,074 main WARN      [atlassian.jira.startup.JiraStartupLogger] 
+
+********************************************************************************************************************************************************************************************************
+WARNING: The system property 'mail.mime.decodeparameters' is not set to true. This may result in e-mail attachments with non-Latin filenames being dropped. For more information please see https://docs.atlassian.com/jira/docs-050/__setting_mail.mime.decodeparameters.
+********************************************************************************************************************************************************************************************************
+
+2012-12-09 13:37:41,074 main WARN      [atlassian.jira.startup.JiraStartupLogger] 
+
+********************************************************************************************************************************************************************************************************
+WARNING: 'Apache Tomcat/6.0.20' server and the 'org.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER' system property is not set to true! This can result in OutOfMemoryErrors. For more information please see http://www.atlassian.com/software/jira/docs/latest/servers/tomcat60.html.
+********************************************************************************************************************************************************************************************************
+
+2012-12-09 13:37:41,094 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Detected that an upgrade is needed; existing data at build 646
+2012-12-09 13:37:41,094 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] ___ Performing Upgrade ____________________
+2012-12-09 13:37:42,944 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Detect and repair duplicate keys in JIRA table
+2012-12-09 13:37:42,944 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Detect and repair duplicate keys in JIRA table' succeeded
+2012-12-09 13:37:42,944 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 663
+2012-12-09 13:37:42,944 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: A re-index is required for management of filters and dashboards by JIRA administrators.
+2012-12-09 13:37:42,954 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'A re-index is required for management of filters and dashboards by JIRA administrators.' succeeded
+2012-12-09 13:37:42,954 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 700
+2012-12-09 13:37:42,954 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Upgrade to build number: 701
+2012-12-09 13:37:43,035 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Upgrade to build number: 701' succeeded
+2012-12-09 13:37:43,035 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 701
+2012-12-09 13:37:43,045 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Signalling all data in JIRA should be reindexed. due to changes to way multi select values are indexed.
+2012-12-09 13:37:43,045 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Signalling all data in JIRA should be reindexed. due to changes to way multi select values are indexed.' succeeded
+2012-12-09 13:37:43,045 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 704
+2012-12-09 13:37:43,045 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Migrating the old JIRA UI colors to the new JIRA 5.0 colors
+2012-12-09 13:37:43,055 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Migrating the old JIRA UI colors to the new JIRA 5.0 colors' succeeded
+2012-12-09 13:37:43,055 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 705
+2012-12-09 13:37:43,055 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Adding a unique constraint to the issue table for issue key
+2012-12-09 13:37:43,065 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Adding a unique constraint to the issue table for issue key' succeeded
+2012-12-09 13:37:43,065 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 706
+2012-12-09 13:37:43,065 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Copying all trackbacks into remote issue links
+2012-12-09 13:37:43,075 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Copying all trackbacks into remote issue links' succeeded
+2012-12-09 13:37:43,075 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 707
+2012-12-09 13:37:43,075 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Performing Upgrade Task: Upgrade to build number: 708
+2012-12-09 13:37:43,085 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Upgrade Task: 'Upgrade to build number: 708' succeeded
+2012-12-09 13:37:43,085 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Setting current build number to 708
+2012-12-09 13:37:43,195 main INFO      [jira.util.index.CompositeIndexLifecycleManager] Reindex All starting...
+2012-12-09 13:37:43,205 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Re-indexing is 0% complete. Current index: Issue
+2012-12-09 13:37:43,205 main INFO      [jira.issue.index.DefaultIndexManager] Reindexing all issues
+2012-12-09 13:37:43,655 main INFO      [jira.util.index.CompositeIndexLifecycleManager] Reindex took: 450ms. Indexer: DefaultIndexManager: paths: [F:\Projekt\ER-Report\target\jira\home\caches\indexes\comments, F:\Projekt\ER-Report\target\jira\home\caches\indexes\issues, F:\Projekt\ER-Report\target\jira\home\caches\indexes\changes]
+2012-12-09 13:37:43,725 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Re-indexing is 0% complete. Current index: SearchRequest
+2012-12-09 13:37:43,885 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Re-indexing is 0% complete. Current index: PortalPage
+2012-12-09 13:37:43,935 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Re-indexing is 100% complete. Current index: PortalPage
+2012-12-09 13:37:44,246 main INFO      [jira.util.index.CompositeIndexLifecycleManager] Reindex took: 381ms. Indexer: SharedEntityIndexManager: paths: []
+2012-12-09 13:37:44,246 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] Re-indexing is 100% complete. Current index: 
+2012-12-09 13:37:44,246 main INFO      [jira.util.index.CompositeIndexLifecycleManager] Reindex All complete. Total time: 831ms.
+2012-12-09 13:37:44,246 main INFO      [atlassian.jira.upgrade.UpgradeManagerImpl] 
+
+***************************************************************
+Upgrade Succeeded! JIRA has been upgraded to build number 713
+***************************************************************
+
+2012-12-09 13:37:49,813 main INFO      [atlassian.jira.scheduler.JiraSchedulerLauncher] Starting the JIRA Scheduler....
+2012-12-09 13:37:49,894 main INFO      [atlassian.jira.scheduler.JiraSchedulerLauncher] JIRA Scheduler started.
+2012-12-09 13:37:58,280 QuartzWorker-1 INFO ServiceRunner    Backup Service [jira.bc.dataimport.DefaultExportService] Data export completed in 770ms. Wrote 622 entities to export in memory.
+2012-12-09 13:37:58,290 QuartzWorker-1 INFO ServiceRunner    Backup Service [jira.bc.dataimport.DefaultExportService] Attempting to save the Active Objects Backup
+2012-12-09 13:37:58,661 QuartzWorker-1 INFO ServiceRunner    Backup Service [jira.bc.dataimport.DefaultExportService] Finished saving the Active Objects Backup
+2012-12-09 13:48:22,751 ContainerBackgroundProcessor[StandardEngine[Catalina]] INFO      [atlassian.jira.startup.DefaultJiraLauncher] Stopping launchers
+2012-12-09 13:48:22,985 ContainerBackgroundProcessor[StandardEngine[Catalina]] INFO      [atlassian.plugin.manager.DefaultPluginManager] Shutting down the plugin system
