@@ -1,0 +1,1 @@
+AJS.$(function(){AJS.$.fn.isDirty=function(){};AJS.$("#fetchLicense").click(function(){var formValues=AJS.$("#bonfire-setupwizard").serializeArray();var url=AJS.$(this).attr("data-url");AJS.$.post(url,formValues,function(){return false})})});

@@ -18,17 +18,17 @@ public class ErFeature extends AbstractReport {
 	}
 	
     public String generateReportHtml(ProjectActionSupport action, Map map) throws Exception {
-       return getParams(action, map).values().toString();
-    	// return descriptor.getHtml("html-view", getParams(action, map));
+    	return getParams(action, map).values().toString();
+    	//return descriptor.getHtml("html-view", getParams(action, map));
     }
     
     public Map getParams(ProjectActionSupport projectActionSupport, Map map){
-    	final String erID = ParameterUtils.getStringParam(map, "erID");
+    	final String erID = ParameterUtils.getStringParam(map, "UserStoryID");
     	Issue erObject = manager.getIssueObject(erID);
     	Map <String, Object> featureMap = new HashMap();
     	Object[] features = erObject.getSubTaskObjects().toArray();
-    	List<Issue> featureList = (List<Issue>) erObject.getSubTaskObjects();
-    	featureMap.put("featureList", featureList);
+    	List<Issue> issueList = (List<Issue>) erObject.getSubTaskObjects();
+    	featureMap.put("issueList", issueList);
     	
     	
     	return featureMap;

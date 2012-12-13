@@ -9,7 +9,7 @@
   <resource type="i18n" name="i18n" location="com.capgemini.hyc.ER-Report"/>
   <report name="Er Feature" i18n-name-key="er-feature.name" key="er-feature" class="com.capgemini.hyc.jira.reports.ErFeature">
     <description key="er-feature.description">The Er Feature Plugin</description>
-    <resource name="view" type="velocity" location="/templates/reports/er-feature/view.vm"/>
+    <resource name="view" type="velocity" location="templates/view.vm"/>
     <resource name="i18n" type="i18n" location="ErFeature"/>
     <label key="er-feature.label"></label>
     <!-- the properties of this report which the user must select before running it -->

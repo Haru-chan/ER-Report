@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.02" errors="0" skipped="0" tests="1" name="com.capgemini.hyc.report.MyPluginTest">
+<testsuite failures="0" time="0.019" errors="0" skipped="0" tests="1" name="com.capgemini.hyc.report.MyPluginTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_27\jre\bin"/>
@@ -18,7 +18,7 @@
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_27\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="java.io.tmpdir" value="C:\Users\Maja\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Haru\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
@@ -26,17 +26,17 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Users\Maja\atlassian-plugin-sdk-4.0\apache-maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_27\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.6.0_27/bin/../jre/lib/i386;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Java\jdk1.6.0_27\bin;C:\Users\Maja\atlassian-plugin-sdk-4.0\bin;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;K:\eclipse indigo\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_27\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Java\jdk1.6.0_27\bin;C:\Users\Maja\atlassian-plugin-sdk-4.0\bin;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
     <property name="os.version" value="6.1"/>
-    <property name="user.home" value="C:\Users\Maja"/>
+    <property name="user.home" value="C:\Users\Haru"/>
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="1.6"/>
-    <property name="user.name" value="Maja"/>
+    <property name="user.name" value="Haru"/>
     <property name="java.class.path" value="C:\Users\Maja\atlassian-plugin-sdk-4.0\apache-maven\boot\classworlds-1.1.jar"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="32"/>
